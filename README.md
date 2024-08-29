@@ -31,7 +31,7 @@ The transpose of a matrix is obtained by swapping rows with columns.
 
 ## Program Codes
 1. USER DEFINED MATRIX
-
+``` javascript
 //Mohit Singh Rawat
 //23070123086
 #include<iostream>
@@ -62,9 +62,10 @@ for (i=0 ; i<r ; i++)
 }
 
 }
+```
 
 2.MATRIX OPERATIONS
-
+``` javascript
 //Mohit Singh Rawat
 //23070123086
 #include<iostream>
@@ -154,9 +155,10 @@ for (i=0 ; i< a ; i++)
     cout<<endl;
 }
 }
+```
 
 3.MATRIX DIAGONAL SUM
-
+``` javascript
 //Mohit Singh Rawat
 //23070123086
 #include<iostream>
@@ -200,9 +202,10 @@ for(i=0; i<r1; i++)
 }
 
 }
+```
 
 4. MATRIX TRANSPOSE
-
+``` javascipt
 //Mohit Singh Rawat
 //23070123086
 #include<iostream>
@@ -251,7 +254,7 @@ for (i=0 ; i<c ; i++)
 }
 
 }
-
+```
 
 ## Outputs
 
