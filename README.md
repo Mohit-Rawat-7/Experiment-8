@@ -30,6 +30,228 @@ In a square matrix (same number of rows and columns), the main diagonal runs fro
 The transpose of a matrix is obtained by swapping rows with columns.
 
 ## Program Codes
+1. USER DEFINED MATRIX
+
+//Mohit Singh Rawat
+//23070123086
+#include<iostream>
+using namespace std;
+int main()
+{
+    int r,c , i , j;
+    cout<< " Enter number of rows: ";
+    cin>> r ;
+    cout<<" Enter number of columns: ";
+    cin>> c;
+    int arr[r][c];
+    for (i=0 ; i < r ; i++)
+    {
+        for(j = 0 ; j < c ; j++)
+        {
+            cout<< "Enter elements ("<<i<< "," <<j<<"): "  ;
+            cin>>arr[i][j];
+        }
+    }
+for (i=0 ; i<r ; i++)
+{
+    for(j = 0; j< c ; j++ )
+    { 
+        cout<< " "<< arr[i][j];
+    }
+    cout<<endl;
+}
+
+}
+
+2.MATRIX OPERATIONS
+
+//Mohit Singh Rawat
+//23070123086
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d , i , j ,k , e, f;
+    cout<< " Enter matrix-1 rows: ";
+    cin>> a ;
+    cout<<" Enter matrix-1 columns: ";
+    cin>> b;
+    cout<< " Enter matrix-2 rows: ";
+    cin>> c ;
+    cout<<" Enter matrix-2 columns: ";
+    cin>> d;
+
+    int mat1[a][b];
+    int mat2[c][d];
+    int add [a][b];
+    int mul [a][d];
+    
+ if ( a !=c || b!=d)
+    {
+        cout<< "Matrix cannot be added as dimension do not match."<<endl;
+    }
+    else
+{for (i=0 ; i < a ; i++)
+    {
+        for(j = 0 ; j < b ; j++)
+        {
+            cout<< "Enter elements ("<<i<< "," <<j<<"): "  ;
+            cin>>mat1[i][j];
+        }
+    }
+
+
+    for (i=0 ; i < c ; i++)
+    {
+        for(j = 0 ; j < d ; j++)
+        {
+            cout<< "Enter elements ("<<i<< "," <<j<<"): "  ;
+            cin>>mat2[i][j];
+        }
+    }
+
+for (i=0 ; i < a ; i++)
+    {
+        for(j = 0 ; j < b ; j++)
+        {
+            add[i][j] = mat1[i][j] + mat2 [i][j];
+
+        }
+    }
+cout<<"SUM OF MATRIX: "<<endl;
+for (i=0 ; i< a ; i++)
+{
+    for(j = 0; j< b ; j++ )
+    { 
+        cout<< " " <<add[i][j];
+    }
+    cout<<endl;
+}}
+
+    if( b != c)
+{
+    cout<< "Matrices cannot be multiplied as dimensions do not match." <<endl;
+    return 1;
+}
+for(i = 0; i<a ; i++)
+{
+    for( j = 0; j<d ; j++)
+    {
+        mul[i][j] = 0;
+        for( k=0; k<b ; k++)
+        {
+            mul[i][j] += mat1[i][k] * mat2[k][j];
+        }
+    }
+}
+cout << "PRODUCT OF MATRIX: "<<endl;
+for (i=0 ; i< a ; i++)
+{
+    for(j = 0; j< b ; j++ )
+    { 
+        cout<< " " <<mul[i][j];
+    }
+    cout<<endl;
+}
+}
+
+3.MATRIX DIAGONAL SUM
+
+//Mohit Singh Rawat
+//23070123086
+#include<iostream>
+using namespace std;
+int main()
+
+{ int i,j, r1, c1, sum=0, sum2=0;
+ cout<<"Enter number of rows and cloumns of first matrix: ";
+cin>>r1>>c1;
+int mat1[r1][c1];
+
+if(r1!=c1)
+{
+    cout<<"ONLY SQUARE MATRICES ARE TO BE ENTERED!"<<endl;
+}
+else
+{
+for(i=0; i<r1; i++)
+{
+    for (j=0 ; j<c1 ; j++)
+    {
+        cout<<"Enter elements ("<<i<< "," <<j<<"): ";
+        cin>>mat1[i][j];
+    }
+}
+
+
+for(i=0; i<r1; i++)
+{
+    for (j=0 ; j<c1 ; j++)
+    { if(i==j)
+    {
+        sum +=mat1[i][j];
+    }
+    if (i+j == r1-1)
+    sum2 += mat1[i][j];
+    }
+    }
+    cout<< "Sum of diagoal elements is: "<<sum<<endl;
+    cout<<"Sum of diagonal elements is: "<<sum2<<endl;
+}
+
+}
+
+4. MATRIX TRANSPOSE
+
+//Mohit Singh Rawat
+//23070123086
+#include<iostream>
+using namespace std;
+int main()
+{
+    int r,c , i , j;
+    cout<< " Enter number of rows: ";
+    cin>> r;
+    cout<<" Enter number of columns: ";
+    cin>> c;
+    int arr[r][c], arr2[c][r];
+    for (i=0 ; i < r ; i++)
+    {
+        for(j = 0 ; j < c ; j++)
+        {
+            cout<< "Enter elements ("<<i<< "," <<j<<"): "  ;
+            cin>>arr[i][j];
+        }
+    }
+for (i=0 ; i<r ; i++)
+{
+    for(j = 0; j< c ; j++ )
+    { 
+        cout<< "  "<< arr[i][j];
+    }
+    cout<<endl;
+}
+for (i=0 ; i<c ; i++)
+{
+    for(j = 0; j< r ; j++ )
+    { 
+        arr2[i][j]= arr[j][i];
+    }
+
+    
+}
+cout<<endl;
+for (i=0 ; i<c ; i++)
+{
+    for(j = 0; j< r ; j++ )
+    { 
+        cout<< " "<< arr2[i][j];
+    }
+    cout<<endl;
+}
+
+}
+
 
 ## Outputs
 
