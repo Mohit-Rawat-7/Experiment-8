@@ -257,6 +257,18 @@ for (i=0 ; i<c ; i++)
 ```
 
 ## Outputs
+1. USER DEFINED MATRIX
+   <img width="311" alt="Screenshot 2024-08-29 at 3 49 24 PM" src="https://github.com/user-attachments/assets/3227b17b-8d02-43a1-acd0-f529be97cf8c">
+   
+2. MATRIX OPERATIONS
+   <img width="296" alt="Screenshot 2024-08-29 at 3 53 50 PM" src="https://github.com/user-attachments/assets/0b4e4547-d4a8-442a-8ab3-cf432c94170a">
+   
+3. MATRIX DIAGONAL SUM
+   <img width="448" alt="Screenshot 2024-08-29 at 3 56 40 PM" src="https://github.com/user-attachments/assets/eac067f1-2202-4b30-b14a-ef1f8f89e6a8">
+
+4. MATRIX TRANSPOSE
+   <img width="315" alt="Screenshot 2024-08-29 at 3 58 31 PM" src="https://github.com/user-attachments/assets/d31bb7b0-bb95-46c2-8596-83a45d4ce2f1">
+  
 
 ### Conclusion
 Learnt How To:- 
